@@ -109,7 +109,7 @@ module.exports = function(grunt) {
           // We use end2end task (which does not start the webserver)
           // and start the webserver as a separate process (in travis_build.sh)
           // to avoid https://github.com/joyent/libuv/issues/826
-          port: 8000,
+          port: 8100,
           hostname: '0.0.0.0',
           middleware: function(connect, options) {
             var base = Array.isArray(options.base) ? options.base[options.base.length - 1] : options.base;
